@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LCSObject {
+
     private List<Integer> lineIds;
     private String LCSseq[];
 
@@ -21,6 +22,7 @@ public class LCSObject {
         //Loop through current sequence using the simple loop approach described in the paper
         int lastMatch = -1;
         for(int i = 0; i < LCSseq.length; i++) {
+
             if(LCSseq[i].equals("*")) {
                 continue;
             }
@@ -72,12 +74,12 @@ public class LCSObject {
     }
 
     //Length for pruning
-    public int length() {
+    int length() {
         return LCSseq.length;
     }
 
     //Count of lineIds in this LCSObject
-    public int count() {
+    int count() {
         return lineIds.size();
     }
 

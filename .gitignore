@@ -1,4 +1,5 @@
 # IntelliJ genereated folder
+*.csv
 out/
 .idea/
 *.iml
